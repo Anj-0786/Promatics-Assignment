@@ -1,0 +1,140 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSave()">
+  <h2 class="panel-title"> Deatails</h2>
+  
+
+  <p>
+    <label for="firstname">First Name </label>
+    <input type="text" id="firstname" name="firstname" formControlName="firstname">
+  </p>
+  <div 
+    *ngIf="!registerForm.controls.firstname?.valid && (registerForm.controls.firstname?.dirty || registerForm.controls.firstname?.touched)">
+    <div class="text-danger"  [hidden]="!registerForm.controls.firstname?.errors?.required">
+      firstame  is required.
+    </div>
+    <div class="text-danger" [hidden]="!registerForm.controls.firstname?.errors?.minlength">
+      Min Length is 3
+    </div>
+  </div>
+  
+  <p>
+    <label for="lastname">Last Name </label>
+    <input type="text" id="lastname" name="lastname" formControlName="lastname">
+  </p>
+   
+  <div
+    *ngIf="!registerForm.controls.lastname?.valid && (registerForm.controls.lastname?.dirty || registerForm.controls.lastname?.touched)">
+    <div class="text-danger" [hidden]="!registerForm.controls.lastname?.errors?.required">
+      lastame  is required.
+    </div>
+    <div class="text-danger" [hidden]="!registerForm.controls.firstname?.errors?.maxlength">
+      MaxLength is 15.
+    </div>
+  </div>
+  <p>
+    <label for="email">Email </label>
+    <input type="text" id="email" name="email" formControlName="email">
+  </p>
+  <div
+  *ngIf="!registerForm.controls.email?.valid && (registerForm.controls.email?.dirty || registerForm.controls.email?.touched)">
+  <div class="text-danger" [hidden]="!registerForm.controls.email?.errors?.required">
+    email is required.
+  </div>
+  <div class="text-danger" [hidden]="!registerForm.controls.firstname?.errors?.required">
+    @ sign is required.
+  </div>
+  </div>
+ 
+  
+   <p>
+    <label for="gender">Gender</label>
+    <input type="checkbox" value="male" formControlName="gender">Male
+    <input type="checkbox" value="female" id="gender" formControlName="gender">Female
+  </p>
+
+  <div
+  *ngIf="!registerForm.controls.gender?.valid && (registerForm.controls.gender?.dirty || registerForm.controls.gender?.touched)">
+  <div class="text-danger" [hidden]="!registerForm.controls.gender?.errors?.required">
+    gender is required.
+  </div>
+  </div>
+
+  <p>
+    <label for="dateofbirth">Date-Of-Birth</label>
+    <input type="date" id="dateofbirth" name="dateofbirth" formControlName="dateofbirth">
+    </p>
+    
+  <div
+  *ngIf="!registerForm.controls.dateofbirth?.valid && (registerForm.controls.dateofbirth?.dirty || registerForm.controls.dateofbirth?.touched)">
+  <div class="text-danger" [hidden]="!registerForm.controls.dateofbirth?.errors?.required">
+    date is required.
+  </div>
+  </div>
+      <h2>Address</h2>
+  <p>
+        <label for="city">City</label>
+        <input type="text" class="form-control" name="city" formControlName="city" >
+    </p>
+     <div
+  *ngIf="!registerForm.controls.city?.valid && (registerForm.controls.city?.dirty || registerForm.controls.city?.touched)">
+  <div class="text-danger" [hidden]="!registerForm.controls.city?.errors?.required">
+    city is required.
+  </div>
+  </div>
+ 
+    <p>
+        <label for="street">Street</label>
+        <input type="text" class="form-control" name="street" formControlName="street"> 
+   </p>
+   <div
+    *ngIf="!registerForm.controls.street?.valid && (registerForm.controls.street?.dirty || registerForm.controls.street?.touched)">
+    <div class="text-danger" [hidden]="!registerForm.controls.street?.errors?.required">
+      street is required.
+    </div>
+    </div>
+     
+    <p>
+        <label for="pincode">Pin Code</label>
+        <input type="text" class="form-control" name="pincode" formControlName="pincode">
+        </p>
+        <div
+    *ngIf="!registerForm.controls.pincode?.valid && (registerForm.controls.pincode?.dirty || registerForm.controls.pincode?.touched)">
+    <div class="text-danger" [hidden]="!registerForm.controls.pincode?.errors?.required">
+      pincode is required.
+    </div>
+    </div>
+ 
+  
+    <h2>Password</h2>
+<p>
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" formControlName="password" >
+</p>
+   <div
+
+    *ngIf="!registerForm.controls.password?.valid && (registerForm.controls.password?.dirty || registerForm.controls.password?.touched)">
+    <div class="text-danger" [hidden]="!registerForm.controls.password?.errors?.required">
+      password is required.
+    </div>
+    <div class="text-danger" [hidden]="!registerForm.controls.password?.errors?.minlength">
+      Min Length is 6
+    </div>
+  </div>
+
+  <p>
+      <label for="confirmpassword">ConfirmPassword</label>
+      <input type="password" class="form-control" name="confirmpassword" formControlName="confirmpassword"> 
+      </p>
+      <div
+    *ngIf="!registerForm.controls.confirmpassword?.valid && (registerForm.controls.confirmpassword?.dirty || registerForm.controls.confirmpassword?.touched)">
+    <div class="text-danger" [hidden]="!registerForm.controls.confirmpassword?.errors?.required">
+      confirmpassword is required.
+    </div>
+    <div class="text-danger" [hidden]="!registerForm.controls.confirmpassword?.errors?.minlength">
+      Min Length is 6
+    </div>
+  </div>
+      <button type="submit" [disabled]="!registerForm.valid">Save</button> 
+     
+      <button type="submit">cancel</button>
+        
+</form>

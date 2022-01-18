@@ -6,6 +6,7 @@
     "start": "ng serve --host 0.0.0.0 --public-host 34.93.237.153 --port 4202",
     "build": "ng build",
     "test": "ng test",
+    "json-server": "json-server --watch db.json",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -37,6 +38,7 @@
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
+    "json-server": "^0.17.0",
     "karma": "~6.1.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
@@ -46,5 +48,17 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.1.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anj-0786/programs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anj-0786/programs/issues"
+  },
+  "homepage": "https://github.com/Anj-0786/programs#readme"
 }

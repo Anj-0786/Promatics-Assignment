@@ -1,0 +1,37 @@
+{
+    "users":[
+        {
+            "id":"1",
+            "fisrtname":"anjalee",
+            "lastname":"rajput",
+            "email":"anjalirajput@gmail.com",
+            "age":22
+        },
+        {
+            "id":"2",
+            "fisrtname":"priya",
+            "lastname":"chouhan",
+            "email":"priyarajput@gmail.com",
+            "age":28
+         },
+         {
+            "id":"3",
+            "fisrtname":"shakti",
+            "lastname":"rana",
+            "email":"shktirajput@gmail.com",
+            "age":28
+
+         }
+    ],
+    "companies":[
+        {
+            "id":"1",
+            "name":"mast"
+        },
+        {
+            "id":"2",
+            "name":"dance"
+
+        }
+    ]
+}

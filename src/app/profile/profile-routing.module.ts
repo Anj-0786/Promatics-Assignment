@@ -8,8 +8,8 @@ import { CompaniesComponent }from './companies/companies.component';
 const routes: Routes = [
   
   {path: "view", component: ProfileComponent},
-  {path: "user", component: UserComponent},
-  {path: "companies", component: CompaniesComponent},
+  {path: "user",  canActivate:[AuthGuard], component: UserComponent},
+  {path: "companies", canActivate: [AuthGuard], component: CompaniesComponent},
 ];
 
 @NgModule({

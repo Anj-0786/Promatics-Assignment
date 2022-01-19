@@ -5,6 +5,7 @@
 export const environment = {
   production: false
 };
+export const baseURL = 'http://34.93.237.153:8901/users'
 
 /*
  * For easier debugging in development mode, you can import the following file

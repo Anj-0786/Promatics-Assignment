@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { AuthGuard } from 'src/app/auth.guard';
 
 const routes: Routes = [
 ];
@@ -30,7 +31,7 @@ const routes: Routes = [
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

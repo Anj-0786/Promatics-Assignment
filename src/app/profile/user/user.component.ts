@@ -1,32 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss']
 })
-
-
-export class AppComponent {
- title = 'promatics-assignment';
- private data:any = []
+export class UserComponent  implements OnInit{
+   data:any = []
   constructor(
     private http: HttpClient
 ) {}
   
 
-
- /* getData(){
+ngOnInit(): void {
     const url ="http://34.93.237.153:8901/users"
     this.http.get(url).subscribe((res)=>{
       this.data = res
       console.log(this.data)
     })
-  }*/
+  }
  }
-
-
+  
 
 

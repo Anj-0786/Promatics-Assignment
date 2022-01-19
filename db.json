@@ -1,37 +1,97 @@
 {
-    "users":[
-        {
-            "id":"1",
-            "fisrtname":"anjalee",
-            "lastname":"rajput",
-            "email":"anjalirajput@gmail.com",
-            "age":22
-        },
-        {
-            "id":"2",
-            "fisrtname":"priya",
-            "lastname":"chouhan",
-            "email":"priyarajput@gmail.com",
-            "age":28
-         },
-         {
-            "id":"3",
-            "fisrtname":"shakti",
-            "lastname":"rana",
-            "email":"shktirajput@gmail.com",
-            "age":28
-
-         }
-    ],
-    "companies":[
-        {
-            "id":"1",
-            "name":"mast"
-        },
-        {
-            "id":"2",
-            "name":"dance"
-
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "firstname": "anjalee",
+      "lastname": "rajput",
+      "email": "anjalirajput@gmail.com",
+      "password": "1243546",
+      "age": 22
+    },
+    {
+      "id": "2",
+      "firstname": "priya",
+      "lastname": "chouhan",
+      "email": "priyarajput@gmail.com",
+      "password": "123456",
+      "age": 28
+    },
+    {
+      "id": "3",
+      "firstname": "shakti",
+      "lastname": "rana",
+      "email": "shktirajput@gmail.com",
+      "password": "234234",
+      "age": 28
+    },
+    {
+      "password": "afdgfdgg",
+      "email": "anj@gmail",
+      "id": "HP4Xk8R"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "uoCUBQI"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "ahT-UsT"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "sEjEvsO"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "VEaKcH0"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "RQ_TnDu"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "11x7ePp"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "IyzSTR0"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "b9yh4aY"
+    },
+    {
+      "password": "123456",
+      "email": "priyarajput@gmail.com",
+      "id": "Vn9JtKe"
+    },
+    {
+      "password": "123456",
+      "email": "anjali@gmail.com",
+      "id": "e2GFzcq"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "ASUS"
+    },
+    {
+      "id": "2",
+      "name": "Apple"
+    },
+    {
+      "id": "3",
+      "name": "maruti"
+    }
+  ]
 }

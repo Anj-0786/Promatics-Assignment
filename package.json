@@ -6,7 +6,7 @@
     "start": "ng serve --host 0.0.0.0 --public-host 34.93.237.153 --port 4202",
     "build": "ng build",
     "test": "ng test",
-    "json-server": "json-server --watch db.json",
+    "json-server": "json-server --host  0.0.0.0 --port 8901 --watch db.json",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

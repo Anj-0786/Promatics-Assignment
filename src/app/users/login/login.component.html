@@ -1,4 +1,4 @@
-<form [formGroup]="LoginForm" (ngSubmit)="onSave()">
+<form [formGroup]="LoginForm" (ngSubmit)="loginProcess()">
     <h2 class="panel-title"> Login</h2>
   
    
@@ -10,12 +10,8 @@
     *ngIf="!LoginForm.controls.email?.valid && (LoginForm.controls.email?.dirty || LoginForm.controls.email?.touched)">
     <div class="text-danger" [hidden]="!LoginForm.controls.email?.errors?.required">
       email and @ sign is required.
-    </div>
-    <div class="text-danger" [hidden]="!LoginForm.controls.firstname?.errors?.email?.required">
-      @ sign is required.
-    </div>
-    </div>
-   
+    </div>   
+   </div>   
     <p>
         <label for="password">password</label>
         <input type="password" class="form-control" name="password" formControlName="password" >
@@ -32,6 +28,7 @@
   </div>
   
         <button type="submit" [disabled]="!LoginForm.valid">Submit</button> 
+        <router-outlet></router-outlet>
          </form>
 
-    <p><a routerLink="/users/register">Next Step</a></p>
+   <!--<p><a routerLink="/users/register">Next Step</a></p> -->

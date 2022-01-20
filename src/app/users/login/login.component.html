@@ -1,9 +1,9 @@
 <form [formGroup]="LoginForm" (ngSubmit)="loginProcess()">
     <h2 class="panel-title"> Login</h2>
   
-    <p *ngIf="login_data?.status=='error'">{{login_data.message}}</p>   
-    <p *ngIf="login_data?.status=='success'">{{login_data.message}}</p>   
+    
     <p>
+      
       <label for="email">Email </label>
       <input type="text" id="email" name="email" formControlName="email">
     </p>
@@ -27,7 +27,8 @@
       Min Length is 6.
     </div>
   </div>
-  
+       <p *ngIf="login_data?.status=='error'">{{login_data.message}}</p>   
+        <p *ngIf="login_data?.status=='success'">{{login_data.message}}</p>  
         <button type="submit" [disabled]="!LoginForm.valid">Submit</button> 
         <router-outlet></router-outlet>
          </form>

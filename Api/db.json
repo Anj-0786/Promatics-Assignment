@@ -1,32 +1,69 @@
 {
-    "users":[
-        {
-            "id": "1",
-            "firstname": "anjali",
-            "lastname": "rajput",
-            "email": "anjali@gmail.com",
-            "password": "123456",
-            "age": 22
-        },
-        {
-            "id": "2",
-            "firstname": "priya",
-            "lastname": "rajput",
-            "email": "priya@gmail.com",
-            "password": "123456",
-            "age": 32  
-        }
-    ],
-    "companies":[
-        {
-            "id": "1",
-            "name": "dance"
-        },
-        {
-            "id": "1",
-            "name": "mast"
-        }
-    ]
-
+  "users": [
+    {
+      "id": "1",
+      "firstname": "anjali",
+      "lastname": "rajput",
+      "email": "anjali@gmail.com",
+      "password": "123456",
+      "age": 22
+    },
+    {
+      "id": "2",
+      "firstname": "priya",
+      "lastname": "rajput",
+      "email": "priya@gmail.com",
+      "password": "123456",
+      "age": 32
     }
-
+  ],
+  "Details": [
+    {
+      "id": "1",
+      "name": "Apple"
+    },
+    {
+      "id": "1",
+      "name": "Asus"
+    },
+    {
+      "firstname": "anjali",
+      "lastname": "rajput",
+      "email": "anjali@gmail",
+      "gender": true,
+      "dateofbirth": "2022-01-20",
+      "city": "fefregrth",
+      "street": "dfgfhg",
+      "pincode": "12345",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": "oPgloyj"
+    },
+    {
+      "firstname": "poonam",
+      "lastname": "rajput",
+      "email": "poonam@gmail.com",
+      "gender": true,
+      "dateofbirth": "2022-01-21",
+      "city": "ludhiana",
+      "street": "2",
+      "pincode": "110",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": "pJYuxtw"
+    },
+    {
+      "firstname": "aditya",
+      "lastname": "rana",
+      "email": "aditya@gmail.com",
+      "gender": true,
+      "dateofbirth": "2000-04-08",
+      "city": "ldh",
+      "street": "1",
+      "pincode": "141001",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": "9li2nfd"
+    }
+  ]
+}

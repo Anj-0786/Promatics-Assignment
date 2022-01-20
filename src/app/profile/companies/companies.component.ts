@@ -15,7 +15,7 @@ export class CompaniesComponent implements OnInit {
 ) {}
   
 ngOnInit(): void {
-  const url ="http://34.93.237.153:8901/companies"
+  const url ="http://34.93.237.153:8901/Details"
   this.http.get(url).subscribe((res)=>{
     this.data = res
     console.log(this.data)

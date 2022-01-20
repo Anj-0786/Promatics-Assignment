@@ -1,16 +1,30 @@
 <div style="text-align:center">
   <h1>
-    COMPANIES DATA!
+    DETAILS DATA!
   </h1>
   <table>
     <tr>
-      <th>Id</th>
-      <th>Name</th>
+     <th>Firstname</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>State</th>
+      <th>Street</th>
+      <th>PinCode</th>
+
       
-    </tr>
-    <tr *ngFor="let u of data">
-      <td>{{u.id}}</td>
-      <td>{{u.name}}</td>
+
+
+  </tr>
+     <tr *ngFor="let u of data">
+     <p><td>{{u.firstname}}</td></p>
+      <td>{{u.lastname}}</td>
+      <td>{{u.email}}</td>
+      <td>{{u.state}}</td>
+      <td>{{u.street}}</td>
+      <td>{{u.street}}</td>
+      <td>{{u.pincode}}</td>
+   
+
       
    </tr>     
   </table>

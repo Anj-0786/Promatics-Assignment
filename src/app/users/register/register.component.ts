@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/auth.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-register',
@@ -8,7 +10,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
-
+  register_data:any;
+  constructor(private authService: AuthService, router: Router) { }
   ngOnInit() {
   this.registerForm = new FormGroup({
     firstname: new FormControl('', [Validators.required,Validators.minLength(3)]),
@@ -22,10 +25,19 @@ export class RegisterComponent implements OnInit {
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     confirmpassword: new FormControl('', [Validators.required]),
       
-    })
+    });
   }
 onSave() {
-  console.log(this.registerForm.value);
+  if(this.registerForm.valid){
+    this.authService.register(this.registerForm.value).subscribe(result=>{
+      if(result.success){
+        console.log(result);
+        alert(result.message);
+      }else
+      {alert(result.message)
+      }
+    });
+  }
 }
   
 }

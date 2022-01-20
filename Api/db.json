@@ -4,12 +4,16 @@
             "id": "1",
             "firstname": "anjali",
             "lastname": "rajput",
+            "email": "anjali@gmail.com",
+            "password": "123456",
             "age": 22
         },
         {
             "id": "2",
             "firstname": "priya",
             "lastname": "rajput",
+            "email": "priya@gmail.com",
+            "password": "123456",
             "age": 32  
         }
     ],

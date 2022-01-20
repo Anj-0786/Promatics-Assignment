@@ -1,7 +1,8 @@
 <form [formGroup]="LoginForm" (ngSubmit)="loginProcess()">
     <h2 class="panel-title"> Login</h2>
   
-   
+    <p *ngIf="login_data?.status=='error'">{{login_data.message}}</p>   
+    <p *ngIf="login_data?.status=='success'">{{login_data.message}}</p>   
     <p>
       <label for="email">Email </label>
       <input type="text" id="email" name="email" formControlName="email">
